@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+       <meta charset="uft-8">
+	   <meta name="descrição" content="Os gêneros de Filmes"/>
+	   <meta name="autor" content="Michel"/>
+		<style type="text/css">
+		    .conteudo-menu{
+			background:#808080;
+			font-family:Times New Roman,Helvetica,sans-serif;
+			font-size:20px;
+			border-bottom:1px solid #ccc;
+			}
+
+		.menu-fixo{
+			z-index:9999;
+			position:fixed;
+			right:0;
+			top:50%;
+			width:880px;
+			
+			margin-top:-2.5px;
+			
+		}
+
+		.menu{
+			height:50px;
+		}
+		.menu ul{
+			list-style:none;
+			margin:0;
+		}
+
+		.menu ul li{
+			float:left;
+			margin-top:6px;
+			padding:6px;
+			border-right:1px dotted #ccc;
+		}
+
+		.menu ul li:first-child{
+			padding-left:0;
+		}
+
+		.menu ul li a{
+			color:#ADD8E6;
+			padding:10px 10px;
+			display:inline-block;
+			text-decoration:none;
+			
+		}
+
+		.menu ul li a:hover{
+			color:#7FFFD4;
+			text-decoration:underline;
+		}
+			*{
+				margin:0px;
+				padding:0px;
+			}
+			.galeria{
+				margin:200px auto;
+				width:500px;
+				height:500px;
+				position:relative;
+				overflow:hidden;
+			}
+			.foto{
+				position:absolute;
+				opacity:0;
+				animation: animacao 30s infinite;
+			}
+			@keyframes animacao{
+				25%{
+					opacity:1;
+					transform:scale(1.1,1.1);
+				}
+				50%{
+					opacity:0;
+				}
+			}
+  
+			.foto:nth-child(1){
+				animation-delay:3s;
+			}
+			.foto:nth-child(2){
+				animation-delay:5s;
+			}
+			.foto:nth-child(3){
+				animation-delay:10s;
+	
+			}
+			.foto:nth-child(4){
+				animation-delay:15s;
+
+			}
+			.foto:nth-child(5){
+				animation-delay:20s;
+
+			}
+			.foto:nth-child(6){
+				animation-delay:25s;
+	
+			}
+		</style>
+		<link rel="stylesheet" type=" text/css" href="cinema.css" />
+
+		<title> Os gêneros de Filmes </title>
+ 
+	</head>
+	<body>
+		<div class="conteudo-menu">
+			<div class="menu">
+				<ul>
+					<li><a href="index.html"> Index </li></a>
+					<li><a href="Ação.html"> Ação </li></a>	 
+					<li><a href="Animação.html"> Animação </li></a>
+					<li><a href="Aventura.html"> Aventura </li></a>
+					<li><a href="Catastrofe.html"> Catastrofe </li> </a>
+					<li><a href="Cinema1.html"> Cinema </li></a>
+					<li><a href="Comedia.html"> Comédia </li></a>
+					<li><a href="formularioContato.html"> Contato </li></a>
+					<li><a href="Ficcao Cientifica.html"> Ficcao Cientifica </li></a>
+			
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<section class="galeria">
+			<img style="height:500px; width:500px" class="foto" src="https://i.pinimg.com/736x/87/4c/4c/874c4c2d58330249a7bbb5f5a04a0eb5--ratatouille-party-supplies.jpg" alt="ratatoulle"/>
+			<img style="height:500px; width:500px" class="foto" src="http://4.bp.blogspot.com/-qsNxPqIOSVY/VPsTTE205PI/AAAAAAAAEZo/OVOLi1cDq4k/s1600/expendables_two_ver18_xxlg-500x500.jpg" alt="os mercenários"/>
+			<img style="height:500px; width:500px" class="foto" src="http://www.aquinabarra.com.br/img/galeria/mulhe_maravilha_20170518233318.jpg" alt="mulher maravilha"/>
+			<img style="height:500px; width:500px" class="foto" src="https://2.bp.blogspot.com/-TJNurrGDGNU/WR9D90Xz-5I/AAAAAAAAFa0/tIYNPx7-SO8r9aTpAY7xoWy6x1YQcHwZACLcB/s500-c/catss.jpg" alt="piratas do caribe a vigança de salazar"/>
+			<img style="height:500px; width:500px" class="foto" src="http://www.jimcarreyonline.com/images/albums/pc/wallpaper-1280x1024/normal_bruce3_1280x960.jpg" alt="todo poderoso"/>
+			<img style="height:500px; width:500px" class="foto" src="https://www.popsci.com/sites/popsci.com/files/import/2013/images/2009/11/Matrix.jpg" alt="matrix"/>
+		</section>
+		
+		<marquee><div id="gggg"><h1> Filmes </h1></div></marquee><br>
+	   
+		  <div id="anima"><h2> Animação: </h2>
+		      <p> Refere-se ao processo segundo o qual cada fotograma de um filme é produzido individualmente, 
+			  podendo ser gerado tanto por computação gráfica quanto fotografando uma imagem desenhada ou 
+			  repetidamente fazendo-se pequenas mudanças a um modelo ),fotografando o resultado. </p></div>
+			  
+			<div id="acao"><h2> Ação: </h2>
+			  <p> É um gênero de filme que geralmente envolve uma história de protagonistas do bem contra antagonistas 
+			  do mal, que resolvem suas disputas com o uso de força física, neles o bem sempre prevalece sobre o mal. 
+			  Os filmes de ação são comuns de se misturarem com os gêneros policiais e crimes, westerns e guerra, 
+			  entre outros.</p></div>
+			  
+			<div id="avent"><h2> Avenutura: </h2>
+			   <p> É um gênero cinematográfico que reflete um mundo heroico de combates e aventuras.Foi inventado na
+			   Itália, como meio de exaltação de seu passado histórico e, posteriormente, foi usado pela Rússia, 
+			   para exaltar a Revolução Russa.</p></div>
+			   
+			<div id="catas"><h2> Castrófe: </h2>
+			  <p> É um gênero cinematográfico muito popular, que mistura três elementos principais: enredo apocalíptico, 
+			  apelo melodramático e cenas de ação, de preferência com efeitos especiais que enfatizem o clima de tensão.O 
+			  gênero compreende uma mistura de ficção científica e fantasia, permitindo ao roteirista abordar todo e 
+			  qualquer tema capaz de causar pânico, que vão desde acidentes nucleares, passando por ataques de extraterrestres,
+			  colisão com cometas, incêndios, grandes acidentes ou intempéries da natureza, como terremotos, maremotos e 
+			  erupções vulcânicas. </p></div>
+			  
+			<div id="comed"><h2> Comédia: </h2>
+			  <p> É um filme com humor ou que pretende provocar o riso da audiência. Junto com o drama, é um dos mais 
+			  importantes gêneros de cinema.</p></div>
+			  
+			<div id="cien"><h2> Ficcão Científica: </h2>
+			  <p> É um gênero de filme que utiliza a ficção científica e a ficção especulativa com base científica de 
+			  fenômenos que não são totalmente aceitos pela ciência moderna, como formas de vida extraterrestre, 
+			  outros planetas, percepção extra-sensorial e viagem no tempo, juntamente com elementos futuristas tais 
+			  como naves espaciais, robôs, ciborgues, viagens interestelares ou outras tecnologias.</p></div><br>
+			  
+			
+	</body>
+			
+	
+</html>

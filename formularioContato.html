@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type=" text/css" href="cinema.css" />
+	    <title> Formulario </title>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+		function entrandoNome(){
+           msgNome.innerHTML="nao vazio";
+			}
+		function saindoNome(){
+		    if(nome.value == ""){
+				alert("erro");
+		       }
+		    }
+		}
+		function comentAki(){
+		   if(cometario.value == ""){
+                 alert("erro");
+				}	
+        }
+		</script>
+	</head>
+	<body>
+		<form action="filmes.php" method="post">
+			Nome: <input type="text" id="nome" onblur="saindoNome()" id="nome" onfocus="entrandoNome()"><span id="msgNome"> </span><br>
+			
+			E-mail: <input  type="text"  id="E-mail" ><br>
+			Sexo:<input type="radio" id="sexo" name="masculino" value="masculino"> Masculino <br>
+			
+				 <input type="radio" id="sexo" name="feminino" value="feminino">  Feminino <br>
+				 
+			Cométario:<input type="text" id="cometario" ><br>
+			
+			<input type="submit" value="Enviar"><br>
+	        
+	    </form>
+		
+		 <a href="index.html"> Voltar a primeira página </a>
+	</body>
+</html>
